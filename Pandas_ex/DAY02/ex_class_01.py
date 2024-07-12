@@ -23,6 +23,13 @@ class burger :
         print(f'패   티 : {self.patty}')
         print(f'야   채 : {self.veg}')
         print(f'브 랜 드 : {self.kind}')
+    
+    # 속성을 변경하거나 읽어오는 메서드 => getter/setter 메서드
+    def get_bread() : # 빵 속성 값을 "읽어오는" 메서드
+        return self.bread
+    
+    def set_bread(self, bread) : 
+        self.bread = bread
 
 ## 객체 생성 -------------------------------------------
 # 불고기 버거 객체 생성
@@ -33,6 +40,11 @@ burger2 = burger("참꺠곡물빵", "쇠고기패티", "치즈 양상추 양파 
 # 버거 정보 확인
 burger1.printInfo()
 burger2.printInfo()
+# 속성을 읽어오는 방법 : (1) 직접 접근 읽기, (2) 간접 접근 읽기 - getter 메서드 사용
+print(burger1.bread, burger1.get_bread())
+# 속성 변경 방법 : (1) 직접 변경 방법, (2) 간접 접근 방법 - setter 메서드 사용
+burger1.bread = "들깨빵" # 직접 접근
+burger1.set_bread("올리브빵")
 
 ## 하나의 값이 고정일 떄 즉, 제조사가 맥도날드 이면 
 class burger : 
