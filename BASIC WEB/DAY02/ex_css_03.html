@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & SELECT</title>
+    <!--외부 CSS 파일 적용-->
+    <link type = "text/css" rel="stylesheet" href="../CSS/mystyle.css">
+
+    <!--내부 CSS 설정-->
+    <style>
+        #secondP {color:red; font-weight:bold;}
+    </style>
+    <!-- 외부에도 적용을하고 내부에도 적용을 했지만 내부랑 가까워서 내부에 지정한 값이 적용 => 가장 가까운 값에 영향을 받음-->
+</head>
+
+<body>
+    <h3>CSS 스타일 적용</h3>
+    <!-- HTML 태그를  이쁘게 스타일링해주는 역할 CSS-->
+    <p>
+        오늘은 화요일 입니다.<br>
+        비오는 화요일 입니다.<br>
+        비오는 가을입니다. <br>
+    </p>
+    <!-- 태그에 바로 적는거 => 인라인-->
+    <p id = "secondP">              
+        내일은 수요일 입니다.
+    </p>
+
+    <p class="mon"> 
+        어제는 월요일이었습니다.
+    </p>
+
+    <p class="mon">
+        어제는 월요일이었습니다.
+    </p>
+
+    <p class="mon"> 
+        어제는 월요일이었습니다.
+    </p>
+
+</body>
+</html>
+
+<!-- 인라인, 내부, 외부 3가지를 한번에 쓰면 나랑 가장 가까운 인라인이  적용됨-->

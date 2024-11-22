@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From 태그</title>
+</head>
+<body>
+    <h3>teexarea 태그 사용법</h3>
+    <!-- textarea : 여러줄의 내용을 입력 받을 때 사용 input대신에-->
+    <hr>
+    <form>
+        <fieldset>
+            <legend>블로그 글쓰기</legend>
+            <p>     <!--p: 문단 태그-->
+                <label>
+                    제목
+                </label>
+                <input type="text" minlength="3" maxlength="10" name="title" palceholder="가을비" autofocus="True"> <!--palceholder="A" 을 하면 아무것도 입력되지 않으면 A가 표시되다가 값이 입력되면 A가 사라짐-->
+                                                                                                <!-- ex) 아이디, 비밀번호 입력하라는 창-->
+                                                                                                <!--  autofocus=True : 화면이 로딩되었을때 커서가 깜빡이는 부분 설정-->
+            </p>
+
+            <p>     
+                <label>
+                    내용
+                </label>
+                <textarea type="textarea"  name="message" palceholder="내용을 입력하세요." rows="10" cols="50"></textarea> <!--rows="10" cols="50" 크기 지정-->
+            </p>
+        </fieldset>    
+        <input type = "submit" value="저장">
+    </form>
+</html>

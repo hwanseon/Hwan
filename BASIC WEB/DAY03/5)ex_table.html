@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & TAG</title>
+    <!--내부 CSS 설정-->
+    <style>
+        table {
+            border-collapse: collapse;
+            border:1px solid blueviolet;
+            width: 50%;
+        }
+
+        td, th {
+            border-bottom: 1px solid blueviolet;
+            text-align: center;
+        }
+
+        th {
+            background-color: beige;
+        }
+    </style>            <!-- border-collapse: collapse는 겹치는 테두리를 1개로 적용-->
+                        <!-- width를 %로 주면 화면 크기를 늘리고 줄이면 크기가 변함-->
+</head>
+<body>
+    <h3>Table 스타일 설정</h3>
+    <table>
+        <tr>
+            <th>학번</th>
+            <th>이름</th>
+            <th>성적</th>
+            <th>학점</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>조혜리</td>
+            <td>99</td>
+            <td>A+</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>김태헌</td>
+            <td>83</td>
+            <td>B-</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>박란영</td>
+            <td>79</td>
+            <td>C+</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<!--
+    <style>
+        table, td, th{
+            border:1px solid blueviolet;
+        }
+    </style>
+
+    ==> 테이블 사방에 테두리가 모두 들어간 상태
+
+
+
+    <style>
+    table, th{
+        border:1px solid blueviolet;
+    }
+
+    td {
+        border-bottom: 1px solid blueviolet;
+    }
+</style>
+
+    -===> td 아래쪽에만 테두리가 들어가고, th, table에는 전체 들어감
+-->

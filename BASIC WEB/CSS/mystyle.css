@@ -1,0 +1,15 @@
+p {
+    background-color: blue;
+}
+#secondP {
+    background-color: antiquewhite;
+    color:brown;      
+    font-weight: bold;   
+}       
+body {
+    align-content: center;
+    background-image:url("../DAY01/cat.jpg")
+}
+.mon {
+    background-color: blueviolet;
+}

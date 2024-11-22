@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+</head>
+<body>
+    <h3>Table tag 관련</h3>
+    <caption>학생정보</caption>     <!-- caption: 테이블 상단에 제목이나 짧은 섦영-->
+    <table border="1">
+        <caption>학생정보</caption>         <!-- 첫 줄을 하나의 병합된 셀 ==> 제목 달 때 많이 사용-->
+        <tr>        <!--tr:  하나의 행-->
+            <td>번호</td>
+            <td>이름</td>
+            <td>전공</td>
+        </tr>
+        <tr>        <!-- td: 하나의 data-->
+            <td>1</td>
+            <td>마징가</td>
+            <td>전투</td>
+        </tr>
+    </table><br>
+
+    <table border="1">
+        <caption>학생정보</caption>       
+        <th>        <!--th: table header-->
+            <td>번호</td>
+            <td>이름</td>
+            <td>전공</td>
+        </th>
+        <tr>      
+            <td></td> 
+            <td>1</td>
+            <td>마징가</td>
+            <td>전투</td>
+        </tr>
+    </table><br>
+
+    <table border="1">
+        <caption>학생정보</caption>       
+        <tr>                <!-- tr안에 테이블 헤더 생성-->
+            <th>번호</th>       <!-- 행에 들어가는 건 데이터가 아니라 하나의 컬럼명 => 자동적으로 볼드체(굵은 글씨)로 표시-->
+            <th>이름</th>       
+            <th>전공</th>
+        </tr>
+
+        <!-- 바로 위에처럼 사용하지 않고 이렇게 사용해도 됨 => 볼드체를 각각씩 지정-->
+        <tr>
+            <td style="font-weight: bold;">번호</td>
+            <td style="font-weight: bold;">이름</td>
+            <td style="font-weight: bold;">전공</td>
+        </tr>
+        <tr>      
+            <td>1</td>
+            <td>마징가</td>
+            <td>전투</td>
+        </tr>
+    </table><br>
+    
+</body>
+</html>

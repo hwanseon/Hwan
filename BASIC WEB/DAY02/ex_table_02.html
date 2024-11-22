@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table tag</title>
+    <!--내부  css 설정-->
+    <style>
+        body {
+            margin:50px;
+            padding:50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Table tag</h3>
+    <!--상품 목록 테이블-->
+    <table border="3">
+        <tr>
+            <th>번호</th>
+            <th>제품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>사과</td>
+            <td>10</td>
+            <td>1300</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>탄산수</td>
+            <td rowspan="2">1</td>      <!-- 위아래 셀을 병합해야함 -->
+            <td rowspan="2">1300</td>    <!--위아래 셀을 병합해야함 --> <!-- 병합을 했으면 밑에 행 정보에서 값 삭제-->
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>사이다</td>
+        </tr>
+
+        <tr>
+            <td>총합</td>
+            <td colspan="3">12600</td>      <!-- 셀병합을 해야함 => colspan="병합할 셀의 수" // 행 병합-->
+        </tr>
+    </table>
+</body>
+</html>

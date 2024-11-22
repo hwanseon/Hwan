@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE</title>
+</head>
+<body align = "center">         <!-- body에 가운데 정렬을하면 밑의 자식들도 다 가운데 정렬이 됨-->
+    <!-- 관련 내용 그룹화-->
+    <div id = "movue_div" background-color="yellow" align = "left">          <!--id속성은 중복X-->
+        <!--문단 태그로 내용 중심으로 문단을 나눔-->
+        <P class="a">영화소개</P>
+        <P>영화소개 페이지 입니다.</P>
+    </div>          <!--div안에 값들만 그룹이 지어져서 안의 값만 영향을 받음 => bolck tag-->
+                    <!-- 자식은 부모의 설정값을 따라감-->
+    <div id="tv_div" align = "center">
+        <P class = "a">TV 프로그램 소개</P>
+        <P>TV 프로그램 <span>소개 페이지</span> 입니다.</P>         <!-- span : 인라인 요소 (한줄에서 일부만 잡는)-->
+    </div>
+</body>
+</html>
+
+<!-- P 태그를 사용하면 한줄씩 띄어서 출력-->
+<!-- Alt + B => WEB 바로 열기-->
+<!-- class : 서로 다른 속성값들에 동일한 값을 주고 싶을 떄 사용-->

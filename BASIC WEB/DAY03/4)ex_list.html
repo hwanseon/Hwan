@@ -1,0 +1,47 @@
+<!-- 순서가 없는 목록에서 앞에 표시기호 변경-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & TAG</title>
+    <!--내부 CSS 설정-->
+    <style>
+        ul.a{
+            list-style: square;
+            color:brown;
+        } 
+        
+        ul.b {
+            list-style-image: url("cat.png");
+        }
+    </style>    <!-- <h3>와 <ul>의 class 이름이 동일하기 때문에 구분을 해줘야함 -> ul.a로 입력-->
+</head>
+<body>
+    <h3 class="a">List 마커 스타일 설정</h3>
+    <!--개발 가능한 프로그래밍 언어, 순서가 없는-->
+    <label>개발 가능한 언어</label>
+    <ul class="a"></ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>C#</li>
+    </ul>
+
+    <label>개발 가능한 언어</label>
+    <ul class="b">
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>C#</li>
+    </ul>
+
+    <label>개발 가능한 언어</label>
+    <ul class="c">
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>C#</li>
+    </ul>
+</body>
+</html>

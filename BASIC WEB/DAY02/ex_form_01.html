@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From 태그</title>
+</head>
+<body>
+    <h1>From 태그와 다양한 입력 Input 태그</h1>
+    <!-- Label 태그 radio : 둘 중에 하나만 선택-->
+    <form>
+        <label>성별 : </label>
+        <input type="radio" name = "gender" value="M" checked="True"> 남자      <!-- checked=-True : 기본적으로 체크가 되도록 설정-->
+        <input type="radio" name = "gender" value = "F"> 여자
+
+        <!--서버 전송 기능 submit 태그-->
+        <input type = "submit" value = "전송"><br>
+
+        <!-- 글자를 클릭해도 check가 되도록 ex) 동그란 박스말고 남자를 선택해도 체크가 되도록-->
+        <label>성별 : </label>
+        <!-- 묵시적방법-->
+        <label>
+        <input type="radio" name = "gender" value="M"> 남자
+        </label>
+
+        <!-- 명시적방법, id는 중복X-->
+        <input id="f" type="radio" name = "gender" value = "F"> <labbel for="f">여자</labbel>
+
+        <!--서버 전송 기능 submit 태그-->
+        <input type = "submit" value = "전송"><br>
+
+        <!-- 글자를 클릭해도 check가 되도록 ex) 동그란 박스말고 남자를 선택해도 체크가 되도록-->
+     </form>
+
+     <h3>filedset & legend 태그로 그룹화</h3>
+     <form>
+        <fieldset>
+            <legend>성별</legend>   <!--그룹된 것에 이름-->
+            <label>
+                <input type="radio" name = "gender" value="M"> 남자
+            </label>
+            <label>
+                <input type="radio" name = "gender" value = "F"> 여자
+            </label>
+        </fieldset>
+
+        <!--서버 전송 기능 submit 태그-->
+        <input type = "submit" value = "전송"><br>
+     </form>
+</body>
+</html>
+
+
+<!--filedset : 그룹을 짓는것 -> 하나로 묶어줌-->

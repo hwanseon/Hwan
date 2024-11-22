@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form  태그</title>
+</head>
+<body>
+    <h1>사용자 입력 From 태그</h1>
+    <hr>        <!-- 줄 긋는거-->
+    <!--
+    GET 방식으로 서버에 입력 데이터 전달 => 주소 표시줄에 보임
+    html파일명 ? name속성값 = 입력값 & name 속성값 = 입력값 & -->
+    <!--ex_form_01.html?msg=None&pass=None&phone=2132&nums=0&url=http%3A%2F%2Fnaver.com&email=hwansun123%40nate.com-->
+    <!-- /ex_form_01.html?msg=날씨가+좋다&pass=1234&phone=33333333&nums=23&url=http%3A%2F%2Fwww.naver.com&email=kkk%40gmail.com-->
+     <!-- 내가 입력한 값들이 전부 노출 => 보안에 취약--> <!-- ==> 포스트 방식-->
+    <form>
+        텍스트 <input type = "text" name = "msg" value = "None"><br>
+        비밀번호 <input type = "password" name = "pass" value = "None"><br>
+        <!-- br을 줘야 위아래로 생성 // type = "password"는 값을 입력하면 안보임-->
+        전화번호 <input type = "tel" name = "phone" value = "None"><br>
+        <!-- tel은 전화번호 형식-->
+        숫자데이터 <input type = "number" name = "nums" value = "0"><br>
+        Web URL <input type = "url" name = "url" value = "0"><br>
+        E-mail <input type = "email" name = "email" value = "0"><br>
+    </form>
+
+    <form>
+        <!-- -->
+        <strong>프로그래밍 가능한 언어 선택</strong><br>
+        Python  <input type = "checkbox" name = "python"><br>
+        HTML <input type = "checkbox" name = "html"><br>
+        My-SQL <input type = "checkbox" name = "mysql"><br>
+
+        <!-- radio 버튼 : 여러개 중 하나만 선택 가능한 체크박스-->
+        <!-- type = "radio", 밑의 경우는 양자택일 ==> 2개의 name값을 똑같이 줘야함 ===> 1개만 선택 가능-->
+        <strong>성별</strong><br>
+        남 <input type = "radio" name = "gender" value = "M"><br>       <!-- 웹상에서 서버가 on, off로 구분하기때문에 value를 지정안해줘도 됨-->
+        여 <input type = "radio" name = "gender" value = "F"><br>
+
+        <strong>연령층</strong><br>
+        10대 <input type = "radio" name = "age" value="10"><br>     <!-- 웹상에서 서버가 알수있도록 value를 지정-->
+        20대 <input type = "radio" name = "age" value="20"><br>
+        30대 <input type = "radio" name = "age" value="30"><br>
+        40대 <input type = "radio" name = "age" value="40"><br>
+        50대 <input type = "radio" name = "age" value="50"><br>
+        60대 <input type = "radio" name = "age" value="60"><br>
+
+        <!-- 버튼 태그-->
+        저장하시겠습니까? <inpit type = "button" name = "okbtn" value="OK"> <br>     <!-- value값에 준 글자가 화면에 보여지는 글자-->
+        
+        <!-- 색상 입력 태그-->
+         배경색 : <input type = "color" name = "bgcolor"><br>
+        
+        <!-- 날짜 요일 입력 태그-->
+         생년원일 : <input type = "date" value = "birthday"><br>
+        <input type = "submit" value = "전송">
+    </form>
+
+
+    <form> 
+        <!-- 암묵적/묵시적 방법-->
+        <label> 
+            메세지 : <input type = "txt"><br>
+        </label>
+
+        <!-- 명시적 방법-->
+        <label for = "msg2">메세지 2 : </label>
+        <input type = "text" id="msg2"><br>
+
+        <!-- 암묵적/명시적 + 명시적 방법-->
+        <label for = "msg1">
+            메세지 : <input type= "text" id = "msg1"><br>
+        </label>
+
+        <input type = "submit" value = "전송">
+    </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & SELECT</title>
+</head>
+<body>
+    <h3>CSS 스타일 적용</h3>
+    <!-- HTML Tag를 예쁘게 스타일링 해주는 역할 CSS-->
+    <p style = "background-color:hsla(22, 96%, 46%, 0.856)">         <!-- 배경색 넣기-->
+        오늘은 화요일 입니다.<br>
+        비오는 화요일 입니다.<br>
+        비오는 가을입니다. <br>
+    </p> <!-- p 태그에 스타일을 걸면 블록 속성이라서 글씨가 없는 부분까지 색칠이 됨-->
+
+    <p>
+        내일은 수요일 입니다.
+    </p>
+
+    <p>
+        어제는 월요일이었습니다.
+    </p>
+
+</body>
+</html>
+
+<!-- 색 변경을 id 지정해서 하기`-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & SELECT</title>
+    <!-- 선택자 {속성값:\; 속성값;}-->
+    <style>
+        p {
+            background-color: blue;
+        }
+        #secondP {
+            background-color: antiquewhite;
+            color:brown;      
+            font-weight: bold;   
+        }       
+        body {
+            align-content: center;
+            background-image:url("../DAY01/cat.jpg")
+        }
+        .mon {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<!-- id 속성값을 변경 할때는 # 아이디-->
+<!-- 클래스의 속성값을 변경하고 싶을 땐 .클래스명-->
+<!-- 글씨 색깔 변경 color:brown;  // 글씨 굵기 변경 font-weight: bold; -->
+ 
+<body>
+    <h3>CSS 스타일 적용</h3>
+    <p>
+        오늘은 화요일 입니다.<br>
+        비오는 화요일 입니다.<br>
+        비오는 가을입니다. <br>
+    </p>
+
+    <p id = "secondP">              <!-- 여기만 다른 색깔로 하고 싶음-->
+        내일은 수요일 입니다.
+    </p>
+
+    <p class="mon"> 
+        어제는 월요일이었습니다.
+    </p>
+
+    <p class="mon">
+        어제는 월요일이었습니다.
+    </p>
+
+    <p class="mon"> 
+        어제는 월요일이었습니다.
+    </p>
+
+</body>
+</html>
