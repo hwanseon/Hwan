@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>음식 추천</title>
+  <style>
+    .container {
+        margin-top: 20px;
+    }
+    textarea {
+        width: 100%;
+        height: 100px;
+    }
+  </style>
+ </head>
+ <body>
+   <div class="container">
+     <h1>기분이나 느낌을 입력하세요</h1>
+     <form action="/predict" method="POST">
+       <textarea name="feeling"></textarea>
+       <br>
+       <input type="submit" value="추천받기">
+     </form>
+   </div>
+ </body>
+</html>
